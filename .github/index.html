@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Proj</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--text-secondary);
+  color: var(--bg-dark);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+        :root {
+     --brand-grad: linear-gradient(135deg,#ff007f 0%,#ff6a00 25%,#ffca00 50%,#7ed321 75%,#00aaff 100%);
+  
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --bg-danger:  #dd1111;
+  --bg-dark: #0a0a0a;
+  --bg-card: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(255, 255, 255, 0.2);
+}
+
+h1{
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+ h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    /* background: linear-gradient(135deg, #f09a9a 0%, var(--primary) 100%); */
+    background: var(--brand-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+}
+
+ .whatsapp-ico{
+    fill: white;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    /* box-shadow: 2px 2px 6px rgba(0,0,0,0.4); */
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+     position: fixed;
+    bottom: 20px;
+    right : 20px;
+    z-index: 10;
+} 
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
+
+    </style>
+
+<body class="bg-dange">
+    
+    <header>
+
+    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top ">
+            <div class="container">
+                <a class="navbar-brand text-info" href="#">Ugo-Pro</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                              </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                                                            </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link text-light" href="#">Blog</a>
+                                                                    </li>
+                                                                        <li class="nav-item dropdown">
+                                                                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                Services
+                                                                            </a>
+                                                                        <ul class="dropdown-menu">
+                                                                    <li><a class="dropdown-item" href="#">Coding Accademy</a></li>
+                                                                <li><a class="dropdown-item" href="#">Registration</a></li>
+                                                            <li><hr class="dropdown-divider"></li>
+                                                        <li><a class="dropdown-item" href="#">Browse for more</a></li>
+                                                    </ul>
+                                                </li>
+                                            <li class="nav-item">
+                                        <a class="nav-link disabled" aria-disabled="true">Free Course</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                    
+                </div>
+
+                 <!-- Notifications -->
+        <div class="dropdown ">
+            <a
+            
+            
+              data-mdb-dropdown-init
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bell"></i>
+              <span class="badge rounded-pill badge-notification bg-danger">7</span> 
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end "
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+
+            
+          </div>
+          <!-- Avatar -->
+          
+           <div class="dropdown">
+            <a
+            data-bs-toggle="dropdown"
+              data-mdb-dropdown-init
+              class="dropdown-toggle d-flex align-items-center hidden-arrow "
+              href="#"
+              id="navbarDropdownMenuAvatar"
+              role="button"
+              aria-expanded="false"
+            >
+              <img
+                src="JaneIMG/profile_girl.jpg"
+                class="rounded-circle"
+                height="25"
+                alt="Black and White Portrait of a Man"
+                loading="lazy"
+              />
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end "
+              aria-labelledby="navbarDropdownMenuAvatar"
+            >
+              <li>
+                <a class="dropdown-item" href="#">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item " href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
+          </div> 
+        </div>
+
+        
+        <!-- Right elements -->
+      </div>
+      
+            </div>
+
+
+        </nav>
+
+    </header>
+
+                    <!-- OffCanvas -->
+
+            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <span style="font-size: 20px ;cursor: pointer;  border-radius: 20px " class=""  onclick="openNav()" >&#9776;</span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-dark" id="offcanvasWithBothOptionsLabel">What's On Your Mind? </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p>Boost Your Online Presence! Register Your Website Domain and Hosting Today.
+                                Get Online Get Noticed!!</p>
+                                </div>
+                                </div>
+
+            <div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p class="lead">What My content here</p>
+                            <p class="lead">What's great remains great, no matter who fails see it</p>
+                                </div>
+                                </div> -->
+
+<!-- ends -->
+
+
+        <main class="my-5">
+            <div class="container shadow-lg">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img src="JaneIMG/jane.jpg" alt="" class="img-fluid w-75" style="border-radius: 10px;">
+                    </div>
+                    <div class="col-md-5 gap bg-light">
+                        <h1 class="mt-4 display-6">About My Company&#174;</h1>
+                        <p class="mt-4"><i> My name is Ugo-Pro and am a Developer & a webdesigner❤ &#128525;.It's not what we do once in a while that shapes our lives, but what we do consistently.</i></p>
+                        <button type="button" style="border-radius: 10px;" class="btn btn-outline-primary mt-3">Call to action »</button>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col">
+                        <div class="bg-secondary text-white my-2 py-3 card text-center">
+                            <div class="card-body text-white">
+                                <marquee width="100%" direction="left">
+   <span class="text-info">Pause Before You Post -</span>
+   <span class="text-info">Verify Before you Share - </span>
+   <span class="text-info">Practise good cyber hygine by updating software and using strong passwords.❤ !</span>
+
+  </marquee>
+  <!-- <i>Pause Before You Post Verify Before You Share - </i>
+      <p>Practise good cyber hygine by updating software and using strong passwords.</p> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Bingo! Holy Harry!</strong> Hey buddy! Jump on it check in on some of those details below. Seize the momemt with your Kings Cloud &#128525;
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card-group">
+                            <div class="card">
+                                <img src="JaneIMG/team1.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ugo-Pro❤</h5>
+                                    <p class="card-text">
+                                        <i>It's not what we do once in a while that shapes our lives, but what we do consistently.</i>
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </p>
+                                    <div class="text-center">
+                                        <button type="button" style="border-radius: 10px;" class="btn btn-outline-danger">read more »</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="JaneIMG/parallax3.jpg" class="card-img-top " alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Ugo-Pro❤</h5>
+                                    <p class="card-text"><i>It's not what we do once in a while that shapes our lives, but what we do consistently.</i></p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </p> 
+                                    <div class="text-center">
+                                        <button type="button" style="border-radius: 10px;" class="btn btn-outline-warning ">read more »</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="JaneIMG/avatar_hat.jpg" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ugo-Pro❤</h5>
+                                    <p class="card-text">
+                                       <i>It's not what we do once in a while that shapes our lives, but what we do consistently.</i>
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </p>
+                                    <div class="">
+                                        <a href="#"><button type="button" style="border-radius: 10px;" class="btn btn-outline-info">read more »</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="text-center my-5">
+                    <h2 class="">Get in touch</h2>
+                    <p class="lead ">Qustions! Do not hesitate to contact us.</p>
+                </div>
+                <div class="row justify-content-center my-5">
+                    <div class="col-lg-6">
+                        <form action="">
+                            <label form="email" class="form-label">Email</label>
+                            <input type="email" id="email" placeholder="code@gmail.com" class="form-control">
+                
+                                <div class="form-floating my-5">
+                                
+                                <input type="name"
+                                id="name"
+                                placeholder="@example Ugo" 
+                                class="form-control">
+                                
+                                <label form="name" class="form-label ">Name</label>
+                                </div>
+                
+                                <label form="subject" class="form-label">subject</label>
+                                <select name=" subject" id="subject" class="form-select">
+                                <option value="pricing">pricing</option>
+                                <option value="technical" selected>technical</option>
+                                <option value="others">others</option>
+                                </select>
+                
+                                <div class="form-floating my-5">
+                                    <textarea 
+                                                name="query" 
+                                                id="query" 
+                                                style="height: 150px;"
+                                                class="form-control" 
+                                            placeholder="write a message"
+                                                
+                                ></textarea>
+                
+                                    <label form="query" >Write a message</label>
+                                </div>
+                            
+                
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">send »</button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+<div class="container text-center my-3">
+            <a href="#"> <span class="badge rounded-pill bg-primary">Coinbase</span></a>
+            <a href="#"><span class="badge rounded-pill bg-secondary">Binance</span></a>
+            <a href="#"><span class="badge rounded-pill bg-success">Gemini</span></a>
+            <a href="#"><span class="badge rounded-pill bg-danger">Bybit</span></a>
+            <a href="#"><span class="badge rounded-pill bg-warning">Bitget</span></a>
+            <a href="#"><span class="badge rounded-pill bg-info text-dark">KCoin-Kloud$</span></a>
+            <a href="#"><span class="badge rounded-pill bg-light text-dark">Bitfinex</span></a>
+            <a href="#"><span class="badge rounded-pill bg-dark">Kraken</span></a>
+
+            
+        </div>
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container text-white">
+              This web page is a part of a demonstration for my <span></span > web design made by <span ><a class="" href="https//ugo_pro.uk">@Ugo-Pro.uk</a> Copyright 2025, Ugo-Pro Company.All right reserved&#169;</span>.
+                <!-- <span class="text-muted">copyrights <a class="" href="https//ugo_pro.com">@Ugo-Pro.org</a></span> -->
+            </div>
+            
+                <a href="whatsapp://send?phone=0000000000"><svg viewBox="0 0 32 32" class="whatsapp-ico"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a>
+
+        </footer>
+
+    <script src="bootstrap.js"></script>
+</body>
+</html>
